@@ -5,7 +5,9 @@ Bulls and Cows Game - CLI Implementation
 Bulls and Cows (also known as Cows and Bulls or Pigs and Bulls or Bulls and Cleots) is an old code-breaking mind or paper and pencil game for two or more players.
 The numerical version of the game is usually played with 4 digits, but can also be played with 3 or any other number of digits.
 
-On a sheet of paper, the players each write a 4-digit secret number. The digits must be all different. Then, in turn, the players try to guess their opponent's number who gives the number of matches. If the matching digits are in their right positions, they are "bulls", if in different positions, they are "cows". Example:
+On a sheet of paper, the players each write a 4-digit secret number. The digits must be all different. Then, in turn, the players try to guess their opponent's number who gives the number of matches. If the matching digits are in their right positions, they are "bulls", if in different positions, they are "cows". 
+
+Example:
 
 Secret number: 4271
 Opponent's try: 1234
