@@ -23,7 +23,7 @@ class Game(object):
 
 	def check_if_is_a_number(self, number):
 		try:
-			parse_to_int = int(number)
+			try_parse_to_int = int(number)
 			return True
 		except ValueError as e:
 			print ("Please enter a valid number!")
@@ -32,8 +32,9 @@ class Game(object):
 	def get_secret_number(self):
 		is_valid = False
 		while(is_valid == False):
-			number = raw_input("Please enter the secret number: ")
-			if self.check_if_number_has_correct_length(number) == False or self.check_if_number_has_different_digits(number) == False or self.check_if_is_a_number(number) == False:
+			number = input("Please enter the secret number: ")
+			if self.check_if_number_has_correct_length(number) == False or self.check_if_number_has_different_digits(number) == False \
+				or self.check_if_is_a_number(number) == False:
 				continue
 			self.secret_number = number
 			return number
@@ -62,16 +63,16 @@ class Game(object):
 			print (num)
 
 	def start_game(self):
-		stop_game = False
-		while(stop_game != True):
-			print("\n<---Welcome to our game 'Bulls and Cows--->'\n")
-			number_of_players = raw_input("Enter the number of the players: ")
+		end_of_the_game = False
+		while(end_of_the_game != True):
+			print("\n<---Welcome to our game 'Bulls and Cows--->\n")
+			number_of_players = input("Enter the number of the players: ")
 			if self.check_if_is_a_number(number_of_players) == False:
 				continue
 			if int(number_of_players) < 1 or int(number_of_players) > 2:
-				print("Please choice 1 or 2 players!")
+				print("\nPlease choice 1 or 2 players!")
 				continue
-			stop_game = True
+			end_of_the_game = True
 			self.manage_the_game(number_of_players)
 
 
