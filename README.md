@@ -14,6 +14,7 @@ The first one to reveal the other's secret number wins the game. As the first pl
 4.Имплементирайте игра на бикове и крави https://en.wikipedia.org/wiki/Bulls_and_Cows
 
 Насоки:
+	
 	1. Направете клас Game, който да представлява една игра, да
 	приема число и да управлява ходовете на играта
 	
