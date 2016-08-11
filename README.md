@@ -42,4 +42,4 @@ The first one to reveal the other's secret number wins the game. As the first pl
 	ограничен брой ходове или казваща само броят на биковете
 
 ## Link to the source
-[Bulls And Cows](http://meteortips.com/second-meteor-tutorial/)
+[Bulls And Cows](https://en.wikipedia.org/wiki/Bulls_and_Cows)
